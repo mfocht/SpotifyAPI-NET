@@ -107,6 +107,11 @@ public async void Test()
 * [GetSavedTracks](/SpotifyWebAPI/library#getsavedtracks)
 * [RemoveSavedTracks](/SpotifyWebAPI/library#removesavedtracks)
 * [CheckSavedTracks](/SpotifyWebAPI/library#checksavedtracks)
+* [SaveAlbums](/SpotifyWebAPI/library#savealbums)
+* [SaveAlbum](/SpotifyWebAPI/library#savealbum)
+* [GetSavedAlbums](/SpotifyWebAPI/library#getsavedalbums)
+* [RemoveSavedAlbums](/SpotifyWebAPI/library#removesavedalbums)
+* [CheckSavedAlbums](/SpotifyWebAPI/library#checksavedalbums)
 
 ###Playlists
 * [GetUserPlaylists](/SpotifyWebAPI/playlists#getuserplaylists)
