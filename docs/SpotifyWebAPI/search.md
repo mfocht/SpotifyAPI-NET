@@ -12,11 +12,11 @@
 |[offset]| The index of the first result to return. Default: 0 | `0`
 |[market]| An ISO 3166-1 alpha-2 country code or the string from_token. | `"de"`
 
-Returns a **SearchItem** which contains the properties `Paging<SimpleArtist> Artists`,`Paging<FullTrack> Tracks`, `Paging<SimpleAlbum> Albums`. They are filled based on your search-type.
+Returns a **SearchItem** which contains the properties `Paging<FullArtist> Artists`,`Paging<FullTrack> Tracks`, `Paging<SimpleAlbum> Albums`, `Paging<SimplePlaylist> Playlists`. They are filled based on your search-type.
 
 **Usage**
 ```cs
-SearchItem item = _spotify.SearchItems("roadhouse+blues", SearchType.Album);
+SearchItem item = _spotify.SearchItems("roadhouse+blues", SearchType.Album | SearchType.Playlist);
 Console.WriteLine(item.Albums.Total); //How many results are there in total? NOTE: item.Tracks = item.Artists = null
 ```
 
