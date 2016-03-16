@@ -28,5 +28,6 @@ Install-Package SpotifyAPI-NET -pre
 ---
 
 ##Projects
-
---
+###[Spofy](https://github.com/eltoncezar/Spofy) by [@eltoncezar](https://github.com/eltoncezar)
+> A Spotify mini player and notifier for Windows
+---
