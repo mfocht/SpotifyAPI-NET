@@ -12,13 +12,15 @@ namespace SpotifyAPI.Local
             Timeout = 2000;
             Headers.Add("Origin", "https://embed.spotify.com");
             Headers.Add("Referer", "https://embed.spotify.com/?uri=spotify:track:5Zp4SWOpbuOdnsxLqwgutt");
+            Headers.Add("User-Agent", "spotifyapinet/0.0");
         }
 
         protected override WebRequest GetWebRequest(Uri address)
         {
-            WebRequest webRequest = base.GetWebRequest(address);
+            HttpWebRequest webRequest = base.GetWebRequest(address) as HttpWebRequest;
             if (webRequest != null)
                 webRequest.Timeout = Timeout;
+            webRequest.KeepAlive = false;
             return webRequest;
         }
     }
