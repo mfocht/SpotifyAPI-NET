@@ -82,7 +82,7 @@ namespace SpotifyAPI.Example
             timeProgressBar.Maximum = track.Length;
 
             if (track.IsAd())
-                return; //Don't process further, maybe null values
+                return; //Don't process further, crashes application if you do.
 
             titleLinkLabel.Text = track.TrackResource.Name;
             titleLinkLabel.Tag = track.TrackResource.Uri;
